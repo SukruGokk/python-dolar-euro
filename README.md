@@ -1,2 +1,12 @@
 # python-dolar-euro
-Python ile kodlamış olduğum bs4, ve requests kütüphanelerini kullanarak kodladığım ve internetten döviz bilgisini çeken bir program
+Python ile kodladığım, internetten döviz bilgisini çeken bir program
+
+KÜTÜPHANELER:
+
+requests
+bs4
+
+KURULUMLAR:
+
+pip install requests
+pip install bs4
