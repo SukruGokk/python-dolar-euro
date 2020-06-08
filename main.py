@@ -1,3 +1,7 @@
+#
+#@author: SukruGokk
+#
+
 import bs4
 import requests
 
