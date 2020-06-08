@@ -33,3 +33,6 @@ def get_dolar():
 		dolar = cnt.find('span', id="last_last").string
 
 		return dolar
+
+print("1$: {}₺".format(get_dolar())
+print("1€: {}₺".format(get_euro()))
