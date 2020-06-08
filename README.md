@@ -5,6 +5,10 @@ KÜTÜPHANE:
 
 requests
 
+bs4
+
 KURULUMLAR:
 
 pip install requests
+
+pip install bs4
