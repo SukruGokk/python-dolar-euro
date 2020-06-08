@@ -3,6 +3,7 @@
 #
 
 import requests
+from bs4 import BeautifulSoup as BS
 
 euroURL = "http://tr.investing.com/currencies/eur-try"
 dolarURL = "http://tr.investing.com/currencies/usd-try"
@@ -13,6 +14,7 @@ def get_euro():
 
 		# PAGE CONTENT
 		cnt = euroSes.get(euroURL, headers={"User-Agent": "Mozilla"}).content
+		cnt = BS(cnt, features = "lxml")
 
 		# EURO VALUE
 		euro = cnt.find('span', id="last_last").string
@@ -25,7 +27,8 @@ def get_dolar():
 
 		# PAGE CONTENT
 		cnt = dolarSes.get(euroURL, headers={"User-Agent": "Mozilla"}).content
-
+		cnt = BS(cnt, features = "lxml")
+		
 		# DOLAR VALUE
 		dolar = cnt.find('span', id="last_last").string
 
