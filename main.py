@@ -26,7 +26,7 @@ def get_dolar():
 	with requests.Session() as dolarSes:
 
 		# PAGE CONTENT
-		cnt = dolarSes.get(euroURL, headers={"User-Agent": "Mozilla"}).content
+		cnt = dolarSes.get(dolarURL, headers={"User-Agent": "Mozilla"}).content
 		cnt = BS(cnt, features = "lxml")
 		
 		# DOLAR VALUE
