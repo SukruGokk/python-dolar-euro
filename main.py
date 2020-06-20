@@ -34,5 +34,5 @@ def get_dolar():
 
 		return dolar
 
-print("1$: {}₺".format(get_dolar())
+print("1$: {}₺".format(get_dolar()))
 print("1€: {}₺".format(get_euro()))
